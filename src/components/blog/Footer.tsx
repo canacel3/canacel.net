@@ -16,7 +16,7 @@ export default function Footer() {
             <div className='hover:underline'>お問い合わせ</div>
           </Link>
         </div> */}
-        <p className='font-mono'>&copy;2022 canacel.net</p>
+        <p className='font-mono'>&copy;2024 canacel.net</p>
       </div>
     </footer>
   )

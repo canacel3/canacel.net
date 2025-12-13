@@ -1,6 +1,6 @@
 import { createClient } from 'microcms-js-sdk'
 
 export const client = createClient({
-  serviceDomain: 'niwa',
+  serviceDomain: 'canacel-net',
   apiKey: process.env.API_KEY,
 })

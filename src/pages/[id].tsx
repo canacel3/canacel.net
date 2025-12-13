@@ -1,10 +1,10 @@
 import { GetStaticPropsContext } from 'next'
-import { client } from '../../libs/client'
-import type { Blog } from '../../../types/blog'
+import { client } from '../libs/client'
+import type { Blog } from '../../types/blog'
 import { parseISO, format } from 'date-fns'
-import Footer from '../../components/blog/Footer'
-import Header from '../../components/blog/Header'
-import Line from '../../components/Line'
+import Footer from '../components/blog/Footer'
+import Header from '../components/blog/Header'
+import Line from '../components/Line'
 
 type Props = {
   blog: Blog
@@ -44,7 +44,7 @@ export default function BlogId(props: Props) {
 
 export const getStaticPaths = async () => {
   const data = await client.get({ endpoint: 'blogs' })
-  const paths = data.contents.map((blog: Blog) => `/blog/${blog.id}`)
+  const paths = data.contents.map((blog: Blog) => `/${blog.id}`)
   return { paths, fallback: false }
 }
 
