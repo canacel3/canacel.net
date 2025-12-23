@@ -1,6 +1,11 @@
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
+@import 'tailwindcss';
+@plugin '@tailwindcss/typography';
+
+@theme {
+  --color-primary: #331219;
+  --color-secondary: #47292f;
+  --font-family-mono: Consolas, monaco, monospace;
+}
 
 .title {
   color: white;
