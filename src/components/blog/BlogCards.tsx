@@ -18,7 +18,7 @@ export default function BlogCards(props: Props) {
               {blog.emoji}
             </div>
             <div className='flex-1 min-w-0'>
-              <h2 className='text-xl font-mono font-medium text-white truncate group-hover:text-stone-200 transition-colors'>
+              <h2 className='text-xl font-mono font-medium text-stone-100 leading-snug group-hover:text-stone-200 transition-colors'>
                 {blog.title}
               </h2>
               <time className='text-xs font-mono text-stone-500 tracking-wider mt-1 block'>

@@ -10,9 +10,9 @@ type Props = {
 
 export default function Blog({ blogs }: Props) {
   return (
-    <div className='min-h-screen flex flex-col bg-stone-900 px-20'>
+    <div className='min-h-screen flex flex-col bg-stone-900 px-12 md:px-12'>
       <Header />
-      <main className='md:m-20 grow text-white'>
+      <main className='grow text-stone-100 py-12'>
         <BlogCards blogs={blogs} />
       </main>
       <Footer />

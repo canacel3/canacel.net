@@ -12,30 +12,30 @@ type Props = {
 
 export default function BlogId(props: Props) {
   return (
-    <div className='min-h-screen flex flex-col bg-primary'>
+    <div className='min-h-screen flex flex-col bg-stone-900 px-12 md:px-12'>
       <Header />
-      <main className='m-10 md:m-20 grow text-white'>
-        <div className='flex flex-col md:flex-row gap-10'>
-          <article>
-            <div className='mb-5'>
-              <time className='text-lg tracking-widest font-mono'>
-                {format(parseISO(props.blog.publishedAt), 'yyyy.MM.dd')}
-              </time>
-            </div>
-            <div className='mb-5'>
-              <div className='font-bold text-2xl leading-10 mb-4'>
-                {props.blog.title}
+      <main className='grow text-stone-100 py-12'>
+        <article className='max-w-3xl mx-auto'>
+          <div className='mb-8 pb-4 border-b border-stone-800'>
+            <time className='text-s font-mono text-stone-500 tracking-wider block mb-8'>
+              {format(parseISO(props.blog.publishedAt), 'yyyy.MM.dd')}
+            </time>
+            <div className='flex gap-4 mb-4'>
+              <div className='text-5xl'>{props.blog.emoji}</div>
+              <div className='flex-1'>
+                <h1 className='text-3xl md:text-4xl font-mono font-bold text-stone-100 leading-tight'>
+                  {props.blog.title}
+                </h1>
               </div>
             </div>
-            <Line />
-            <div
-              className='prose max-w-none'
-              dangerouslySetInnerHTML={{
-                __html: `${props.blog.content}`,
-              }}
-            />
-          </article>
-        </div>
+          </div>
+          <div
+            className='prose prose-invert prose-stone max-w-none prose-headings:font-mono prose-headings:font-bold prose-a:text-stone-400 prose-a:no-underline hover:prose-a:text-stone-300'
+            dangerouslySetInnerHTML={{
+              __html: `${props.blog.content}`,
+            }}
+          />
+        </article>
       </main>
       <Footer />
     </div>
