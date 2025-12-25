@@ -30,7 +30,7 @@ export default function BlogId(props: Props) {
             </div>
           </div>
           <div
-            className='prose prose-invert prose-stone max-w-none prose-headings:font-bold prose-p:text-stone-100 prose-li:text-stone-100 prose-a:text-stone-300 prose-a:underline [&_h1_a]:text-stone-300 [&_h1_a]:underline [&_h1_a]:font-bold [&_h2_a]:text-stone-300 [&_h2_a]:underline [&_h2_a]:font-bold [&_h3_a]:text-stone-300 [&_h3_a]:underline [&_h3_a]:font-bold'
+            className='prose prose-invert prose-stone max-w-none prose-headings:font-bold prose-p:text-stone-100 prose-li:text-stone-100 prose-a:text-sky-400 prose-a:underline [&_h1_a]:text-sky-400 [&_h1_a]:underline [&_h1_a]:font-bold [&_h2_a]:text-sky-400 [&_h2_a]:underline [&_h2_a]:font-bold [&_h3_a]:text-sky-400 [&_h3_a]:underline [&_h3_a]:font-bold'
             dangerouslySetInnerHTML={{
               __html: `${props.blog.content}`,
             }}
