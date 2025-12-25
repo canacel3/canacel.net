@@ -30,7 +30,7 @@ export default function BlogId(props: Props) {
             </div>
           </div>
           <div
-            className='prose prose-invert prose-stone max-w-none prose-headings:font-mono prose-headings:font-bold prose-a:text-stone-400 prose-a:no-underline hover:prose-a:text-stone-300'
+            className='prose prose-invert prose-stone max-w-none prose-headings:font-bold prose-a:text-stone-400 prose-a:no-underline hover:prose-a:text-stone-300'
             dangerouslySetInnerHTML={{
               __html: `${props.blog.content}`,
             }}
