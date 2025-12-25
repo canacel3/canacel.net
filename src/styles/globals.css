@@ -2,7 +2,6 @@
 @plugin '@tailwindcss/typography';
 
 @theme {
-  --color-secondary: #47292f;
   --font-family-mono: Consolas, monaco, monospace;
 }
 
